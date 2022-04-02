@@ -20,13 +20,13 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          password: ${{ secrets.DOCKER_TOKEN }}
           
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: linuxserver/code-server
+          images: channinghe/code-server
           
       - name: Build and push Docker image
         uses: docker/build-push-action@v2 # docker build & push
