@@ -2,6 +2,9 @@
 
 #apt-get install build-essential gdb gcc wget
 
+
+docker CLI :
+
 docker run -d \
   --name=code-server \
   -e PUID=1000 \
@@ -16,3 +19,4 @@ docker run -d \
   -p 8443:8443 \
   -v /path/to/appdata/config:/config \
   --restart unless-stopped \
+  channinghe/code-server
