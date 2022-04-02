@@ -30,7 +30,7 @@ jobs:
         id: read-docker-image-identifiers
         run: |
           repository=${{ github.repository }}
-          echo IMAGE_NAME_VERSION=$(echo $channinghe/${repository##*/}:${{ steps.date.outputs.today }} ) >> $GITHUB_ENV
+          echo IMAGE_NAME_VERSION=$(echo channinghe/${repository##*/}:${{ steps.date.outputs.today }} ) >> $GITHUB_ENV
           #echo IMAGE_NAME_LATEST=$(echo $channinghe/${repository##*/}:${{ steps.date.outputs.today }} ) >> $GITHUB_ENV
 
           
