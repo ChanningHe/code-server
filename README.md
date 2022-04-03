@@ -1,6 +1,7 @@
 # code-server
 
-#apt-get install build-essential gdb gcc wget
+From linuxserver/docker-code-server
+  && apt-get install build-essential gdb gcc wget
 
 
 docker CLI :
