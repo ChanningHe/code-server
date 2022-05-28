@@ -6,4 +6,4 @@ FROM linuxserver/code-server:latest
 
 USER root
 RUN apt-get update \
-	&& apt-get install -y build-essential gdb gcc wget python3
+	&& apt-get install -y build-essential gdb gcc wget python3.6
