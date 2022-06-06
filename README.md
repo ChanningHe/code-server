@@ -1,8 +1,8 @@
 # code-server
 
-From linuxserver/docker-code-server
-  && apt-get install build-essential gdb gcc wget
-
+RUN apt-get update \
+	&& apt-get install -y build-essential gdb gcc wget python3 python3-pip \
+    	&& pip install numpy
 
 docker CLI :
 
