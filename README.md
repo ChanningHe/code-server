@@ -5,7 +5,6 @@ RUN apt-get update \
     	&& pip install numpy
 
 docker CLI :
-
 docker run -d \
   --name=code-server \
   -e PUID=1000 \
