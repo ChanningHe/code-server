@@ -6,5 +6,5 @@ FROM linuxserver/code-server:latest
 
 USER root
 RUN apt-get update \
-	&& apt-get install -y build-essential gdb gcc nano wget python3 python3-pip libx11-dev\
+	&& apt-get install -y build-essential gdb gcc nano curl wget python3 python3-pip libx11-dev\
     	&& pip install numpy
